@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Media Favorites</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Media Favorites <span class="glyphicon glyphicon-star"></span></p></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li  class="active"><a href="index.html">Home <i class='fas fa-home'></i></a></li>
+          <li><a href="tvshows.html">TV Shows <i class='fas fa-play-circle'></i></a></li>
+          <li><a href="videogames.html">Video Games <i class='fas fa-gamepad'></i></a></li>
+          <li><a href="movies.html">Movies <i class='fas fa-film'></i></a></li>
+          <li><a href="youtubechannels.html">YouTube Channels <i class='fab fa-youtube'></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-top: 75px">
+    <div class="jumbotron" style="background-color: rgba(10,249,254,.60)">
+      <div class="container">
+        <h1 class="display-3" style="color: white;">Media Favorites</h1>
+        <p class="lead" style="color: white;"></p>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLongTitle">About The Design Of This Website</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>I used a lot of <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank">Bootstrap4</a> for the components of the website, but I spent a lot of
+ time customizing the overall design and overriding the Bootstrap CSS. Bootstrap handles the media queries for responsiveness when changing screen size but those can also be customized in CSS.
+  I also used <a href="https://jquery.com/" target="_blank">JQuery</a> for some of the functionality of the site like this popup being activated by the button
+ in the footer. Also, some of the icons are Bootstrap icons, and some are <a href="https://fontawesome.com/" target="_blank">Fontawesome</a> icons. <br><br>
+ I like the cooler, darker colors in the design, and I changed the color balance of a lot of the images that I used in the carousels to make them more blue
+ to match the design.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="myCarousel" class="carousel slide" style="max-width: 960px; margin: 0 auto;" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/home-image.jpg" alt="Home Image">
+      <div class="carousel-caption" style="background-color: rgba(16,10,60,.70); border-style: solid; border-color: rgba(255,255,255,0.40);">
+        <h2>Top 5's</h2>
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer" id="bottomPage">
+  <p>Home <i class='fas fa-home'></i></p>
+  <div>
+
+<div class="footer">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  <i class='fas fa-magic'></i> Design By Austin Howard
+</button>
+</div>
+
+</body>
+</html>
