@@ -1,4 +1,4 @@
-# media-site
+# bootstrap-media-site-template
 Bootstrap Template Website
 
 ## How To Use
